@@ -15,3 +15,18 @@ for regulated and enterprise environments.
 - Output traceability
 - Provider-agnostic LLM integration
 - Secure-by-design architecture
+
+## Audit Logging
+
+This system implements structured audit logging to support traceability
+and compliance in regulated environments.
+
+All critical actions emit audit events including:
+- Actor (system, user, reviewer)
+- Action performed
+- Resource affected
+- Timestamp (UTC)
+- Contextual metadata
+
+Audit logs are append-only and designed to support review,
+incident analysis, and governance requirements.
